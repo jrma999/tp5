@@ -1,0 +1,29 @@
+h1 {
+    font-size: 2em;
+    color: red;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: blue;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font-size: medium; 
+    color: black;
+    font-family: Verdana, sans-serif;
+}
+body {
+    background-image: url('gnome.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0; 
+    padding: 0; 
+}
