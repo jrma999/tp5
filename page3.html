@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="1style.css" rel="stylesheet"/>
+        <title>???</title>
+        <style>
+            .question {
+                display: none; /* Cacher les questions au départ */
+            }
+            .question.active {
+                display: block; /* Afficher la question active */
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="element element1"><img src="image1/kodackmeme1.jpg"></div>
+        <div class="element element2"><img src="image1/kodackmeme2.jpg"></div>
+        <div class="element element3"><img src="image1/kodackmeme6.jpg"></div>
+        <div class="element element4"><img src="image1/kodackmeme5.jpg"></div>
+        <div class="element element5"><img src="image1/kodackmeme4.jpg"></div>
+        <div class="element element6"><img src="image1/kodackmeme3.jpg"></div>
+        </div>
+        <footer1>
+        <form class="greg" method="get" action="">
+            <h8>Avis</h8>
+            <p>
+                <label for="prenom">Votre prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Ex. : Mathieu" size="30" maxlength="20">
+            </p>
+            <p>
+                <label for="ameliorer">Des conseils pour améliorer mon site ?</label><br>
+                <textarea name="ameliorer" id="ameliorer"></textarea>
+            </p>
+
+            <h1>sondage</h1>
+
+            <div class="question active" id="question1">
+                <h9>Quel type de musique écoutez vous ?</h9></br>
+
+                <form id="form1">
+                    <label>
+                        <input type="radio" name="pays" value="usa"> states
+                    </label><br>
+                    <label>
+                        <input type="radio" name="pays" value="fr"> français
+                    </label><br>
+                    <label>
+                        <input type="radio" name="pays" value="latino"> latino
+                    </label><br>
+                    <label>
+                        <input type="radio" name="pays" value="autre"> autre
+                    </label><br><br>
+                    <button type="button" onclick="showNextQuestion('question2')">Soumettre</button>
+                </form>
+            </div>
+        
+            <!-- Deuxième question -->
+            <div class="question" id="question2">
+                <h9>Quel est votre style de musique préféré ?</h9>
+                <form id="form2">
+                    <label>
+                        <input type="radio" name="style" value="rap"> rap
+                    </label><br>
+                    <label>
+                        <input type="radio" name="style" value="R&B"> R&B
+                    </label><br>
+                    <label>
+                        <input type="radio" name="style" value="rock"> rock
+                    </label><br>
+                    <label>
+                        <input type="radio" name="style" value="autre"> autre
+                    </label><br><br>
+                    <button type="button" onclick="showNextQuestion('question3')">Soumettre</button>
+                </form>
+            </div>
+        
+            <!-- Troisième question -->
+            <div class="question" id="question3">
+                <h9>combien de temps par jours écoutez vous de la musique ?</h9>
+                <form id="form3">
+                    <label>
+                        <input type="radio" name="temps" value="-1h"> -1h
+                    </label><br>
+                    <label>
+                        <input type="radio" name="temps" value="+2h"> +2h
+                    </label><br>
+                    <label>
+                        <input type="radio" name="temps" value="+5h"> +5h
+                    </label><br>
+                    <label>
+                        <input type="radio" name="temps" value="+10"> +10h
+                    </label><br><br>
+                    <button type="button" onclick="showResults()">Soumettre</button>
+                </form>
+            </div>
+        
+            <!-- Résultats du sondage -->
+            <div id="results" class="question">
+                <h9>Merci d'avoir répondu au sondage !</h9>
+                <p>Vos réponses ont été enregistrées.</p>
+            </div>
+        
+            <script>
+                // Fonction pour afficher la question suivante
+                function showNextQuestion(nextQuestionId) {
+                    // Cacher la question actuelle
+                    const currentQuestion = document.querySelector('.question.active');
+                    currentQuestion.classList.remove('active');
+        
+                    // Afficher la question suivante
+                    const nextQuestion = document.getElementById(nextQuestionId);
+                    nextQuestion.classList.add('active');
+                }
+        
+                // Fonction pour afficher les résultats à la fin
+                function showResults() {
+                    const currentQuestion = document.querySelector('.question.active');
+                    currentQuestion.classList.remove('active');
+                    
+                    // Afficher le message de remerciement
+                    const results = document.getElementById('results');
+                    results.classList.add('active');
+                }
+            </script>
+    </footer1>
+            <a class="enbasla" href="index1.html">page 1</a>
+            <a class="enbasla" href="page2.html">Page 2</a>
+            <a class="enbasla" href="page4.html">recrutement chez Genius</a>
+            </html>
