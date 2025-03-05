@@ -1,0 +1,258 @@
+
+          /* Réinitialisation des marges et padding */
+            body, h1, p, a {
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Style général du body */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                text-align: left;
+                padding: 20px;
+                margin: 0;
+            }
+            .banniere {
+                padding: 100px; /* Vous ne connaissez pas encore cette propriété mais elle permet d'ajouter de l'espace dans notre élément*/
+                background-image: url('https://i.imgflip.com/2cy907.jpg');
+            }
+            /* Conteneur pour aligner les logos horizontalement */
+            .logo-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .logo {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+          
+    
+            /* Style pour les images des logos */
+            .logo-container img {
+                max-width: 50px; /* Limite la taille des logos */
+                height: auto;     /* Conserve les proportions */
+                transition: transform 0.3s ease; /* Effet de transition lors du survol */
+            }
+    
+            /* Effet de zoom lors du survol sur les logos */
+            .logo-container img:hover {
+                transform: scale(1.1); /* Zoom au survol */
+            }
+    
+            /* Lien vers la page 2 */
+            .page-link {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+    
+            .page-link:hover {
+                background-color: #2980b9;
+            }
+            spam {
+                color: rgb(132, 161, 247);
+            }
+            li {
+                color: rgb(241, 164, 238);
+            }
+            .jaro-uniquifier {
+                font-family: "Jaro", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .jaro-uniquifierr {
+                font-family: "Jaro", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal; 
+               
+              }
+
+              .protest-revolution-regular {
+                font-family: "Protest Revolution", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                
+                border-top: 3px #000000 solid;
+                border-right: 3px #000000 solid;
+                border-bottom: 3px #000000 solid;
+                border-left: 3px #000000 solid;
+                background-color: rgb(250, 250, 250);
+
+              }
+              h1 {
+                font-size: 50px;
+                color: #0051ff;
+              }
+
+            h2, h3, h4, h5, h6, h8 {
+                font-size: 40px; /* Définit la taille du titre en pixels */
+                color: #0051ff;
+            }
+            body {
+               
+                background-image: url('image1/kodack-blackfde.jpg');
+                background-size: cover; /* Pour couvrir toute la page */
+                background-position: center center; /* Pour centrer l'image */
+                background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+                height: 205vh; /* S'assure que le fond couvre toute la hauteur de la fenêtre */
+            }
+            .pieddepage {
+                background: linear-gradient(to top right, rgb(255, 255, 255), rgba(0, 0, 0, 0.3)), 
+                            url('https://example.com/background-image.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                text-align: center;
+            }
+            img:hover {
+                opacity: 0.5;
+            }
+            header {
+
+                padding: 16px;
+            }
+            footer {
+                padding: 16px;
+            }
+            header1 {
+                padding: 80px;
+            }
+            footer1 {
+                padding: 50px;
+            }
+            h2, h3, h4, h5, h6 { 
+                width: 500px;
+                text-align: justify;
+                padding: 16px;
+                margin: auto;
+            }
+            section1 {
+                padding: 50px;
+            }
+            main {
+                text-align: left;
+                padding: 16px
+            }
+            nav {
+                text-align: left;
+                padding: 16px
+            }
+
+            .center-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 5vh; 
+                text-align: center; 
+              }
+             p{
+                color: #ffffff;
+             }
+             .box {
+                height: 160px;
+              }
+              .conteneur {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            img {
+                text-align: center;
+                width: 150px;  /* Largeur réduite à 50px */
+                height: auto;
+                border-radius: 15px; /* Ajoute des coins arrondis à l'image */
+                border: 5px solid #000; /* Ajoute une bordure noire de 5px autour de l'image */
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container img {
+                width: 300px; /* L'image prend 100% de la largeur du conteneur */
+                height: 200px; /* Garde les proportions de l'image */
+              }
+            .element {
+                margin: 30px;
+            }
+            .enbasla {
+                display: flex;
+                height: 5vh;
+                margin: 5%;
+                color: white;
+                justify-content: center; /* Centre le texte horizontalement */
+            }
+            .enbasla1 {
+                display: flex;
+                justify-content: center; /* Centre le texte horizontalement */
+                align-items: center;     /* Centre le texte verticalement */
+                height: 10vh;
+                color: black;
+            }
+            .container2 {
+                display: flex;
+                justify-content: center; /* Centre le texte horizontalement */
+                align-items: center;     /* Centre le texte verticalement */
+                height: 100vh;           /* Fait en sorte que le conteneur prenne toute la hauteur de la fenêtre */
+                color: rgb(60, 141, 134);
+            }
+            .text-overlay {
+                position: bottom;
+                top: 50%;
+                left: 50%;
+                transform: translate(20%,-400%);
+                color: white;
+                font-size: 20px;
+                opacity: 0; /* Texte invisible par défaut */
+                transition: opacity 0.3s ease; /* Transition fluide pour l'apparition du texte */
+              }
+              
+              .box:hover .text-overlay {
+                opacity: 5; /* Texte visible au survol */
+              }
+              td, th {
+                border: 1px solid black;
+
+              }
+              table {
+                border-collapse: collapse;
+                display: flex;
+                justify-content: center;  /* Centre horizontalement */
+              }
+              :required {
+                background-color:#F2A3BB;
+            }
+            .greg {
+                text-align: center;
+                width: 100%; /* S'assure que l'élément prend toute la largeur de la page */
+            }
+            .question {
+                text-align: center;
+                width: 100%; /* S'assure que l'élément prend toute la largeur de la page */
+                color: white;
+            }
+            @media screen and (max-width: 996px) {
+                .ton-conteneur {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
